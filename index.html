@@ -1,8 +1,62 @@
+
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
+    <title>Tax Calculator</title>
+    <style>
+    
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: lightgrey;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
+
 </head>
-<body>
-    <input id="price" /><button id="calculate">Calculate</button>
-    <p>Hst on <span id="amount">0</span> is <span id="hst">0</span></p>
+
+<body class="container mt-5">
+
+    <div class="container">
+
+        <div class="form-group">
+            <label for="income">Enter the income</label>
+            <input id="income" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="deduct">Enter the already paid tax</label>
+            <input id="deduct" class="form-control" />
+        </div>
+
+        <button id="calculate" class="btn btn-primary">Calculate</button>
+
+        <div class="mt-4">
+            <p>Income = $<span id="Amo">0</span></p>
+            <p>Ontario Tax = $<span id="OntarioTax">0</span></p>
+            <p>Federal Tax = $<span id="FederalTax">0</span></p>
+            <p>Total Tax = $<span id="TotalTax">0</span></p>
+            <p>Owing Tax = $<span id="OwingTax">0</span></p>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
