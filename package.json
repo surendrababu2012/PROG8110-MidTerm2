@@ -1,7 +1,7 @@
 { 
-    "name": "Demo", 
+    "name": "PROG8110-MidTerm2", 
     "version": "1.0.0", 
-    "description": "demo project.", 
+    "description": "PROG8110-MidTerm2", 
     "scripts": { 
       "lite": "lite-server --port 10001", 
       "start": "npm run lite" 
